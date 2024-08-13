@@ -1,7 +1,7 @@
 name: called-workflow
 on: 
   workflow_run:
-    workflows: [""]
+    workflows: ["caller-workflow"]
     types: ["completed"]
 jobs:
   demo:
