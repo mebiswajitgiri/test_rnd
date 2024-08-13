@@ -11,5 +11,5 @@ jobs:
       with:
         python-version: 3.9
     - run: |
-        python -c print("It's a caller workflow")
-        python -c print("I will call the called workflow")
+        python -c "print("It's a caller workflow")"
+        python -c "print("I will call the called workflow")"
