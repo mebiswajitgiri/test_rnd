@@ -1,0 +1,15 @@
+name: caller-workflow
+on: workflow_dispatch
+
+jobs:
+  demo:
+    name: any-job
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4.1.7
+    - uses: actions/setup-python@v5.1.1\
+      with:
+        python-version: 3.9
+    - run: |
+        print("It's a caller workflow")
+        print("I will call the called workflow")
