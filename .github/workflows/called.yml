@@ -1,0 +1,16 @@
+name: called-workflow
+on: 
+  workflow_run:
+    workflows: [""]
+    types: ["completed"]
+jobs:
+  demo:
+    name: demo-job
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5.1.1
+        with:
+          python-version: 3.9
+      - run: |
+          print("I am a Called workflow")
+          print("The Caller has called me")
