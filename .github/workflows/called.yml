@@ -13,5 +13,5 @@ jobs:
         with:
           python-version: 3.9
       - run: |
-          python -c "print("I am a Called workflow")"
-          python -c "print("The Caller has called me")"
+          python -c "print(\"I am a Called workflow\")"
+          python -c "print(\"The Caller has called me\")"
